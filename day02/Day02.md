@@ -12,7 +12,7 @@
 
 * `git status` : 현재 폴더의 git의 상태
 * `git add .` : 현재 폴더의 변경 사항들을 commit하기 위해서 준비
-* `git command -m 'day02'입니다.` : commit 변경 사항 저장. 메세지는 자유롭게 작성 가능 
+* `git commit -m 'day02'입니다.` : commit 변경 사항 저장. 메세지는 자유롭게 작성 가능 
 * `git push -u origin master` : remote로 등록된 원격 저장소(remote repository)
   * 이후에는 `git push`만 입력해도 동작합니다.
 
