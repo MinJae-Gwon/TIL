@@ -34,14 +34,14 @@ ave_temp = total_temp / len(temp) #=> -10/3
 
 # 3-2. 가장 더웠던 곳은?
 
-maxi =0
-int_temp =[]
+city_max = 0
+top_temp = []
 for city_temp in city.values():
     print(city_temp)
-    for i in city_temp:
-        city_max = max(city_temp)
-        
-    print(city_max)
-       
-       
+    city_max = max(city_temp)
+    top_temp.append(city_max)
+print(max(top_temp))
+
+         
 # 3-3. 
+

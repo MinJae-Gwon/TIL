@@ -61,19 +61,19 @@ score = {
     }
 }
 
-# # 1. 이 학생의 평균을 구하시오.
-# #풀이 1
-# total_score =0
-# for subject_score in score.values():
-#     total_score = total_score + subject_score
+# 1. 이 학생의 평균을 구하시오.
+#풀이 1
+total_score =0
+for subject_score in score.values():
+    total_score = total_score + subject_score
 
-# ave_score = total_score / len(score)
-# print(ave_score)
+ave_score = total_score / len(score)
+print(ave_score)
 
-# #풀이 2
-# total_score = sum(score.values())
-# ave_score = total_score / len(score)
-# print(ave_score)
+#풀이 2
+total_score = sum(score.values())
+ave_score = total_score / len(score)
+print(ave_score)
 
 
 # 2. 반평균을 구하시오
@@ -120,7 +120,7 @@ city ={
 광주 : 값
 구미 : 값
 '''
-total =0
+
 int_temp =[]
 for city_temp in city.values():
     total=0
