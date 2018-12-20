@@ -11,14 +11,22 @@ b=a.split(';')
 b = list(map(int, b))
 # #1. b = [int(i) for i in b]
 # #2. for i in range(len(b)):
-# #       b[i] = int(b[i])
+#       b[i] = int(b[i])
+# 3.
+#int_price = []
+#for i in b:
+#    int_price.append(int(i))
+#
+
 b.sort()
 #b=sorted(b,key=int)
+#sorted는 소트 후 새로운 리스트를 리턴한다는 점이고 리스트 자체의 sort함수는 리스트 그 자체를 소트시킨다는 점이 다르다.
 b.reverse()
 # #b.sort(reverse=True) 가능
 print(b)
 
-
+#Chain, 가독성 낮아짐
+#sorted_price = sorted(list(map(int, b)), reverse=True)
 
 
 # while문 이용으로 풀기
