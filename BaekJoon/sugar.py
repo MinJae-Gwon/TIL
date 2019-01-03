@@ -14,9 +14,10 @@ elif n>=5:
         elif (n%5)%3 !=0:
             if n%3 ==0:
                 print(n//3)
-            elif n%3%5 ==0:
+            elif (n%3)%5 ==0:
                 print(n//3+n%3//5)
-            else:
+            
                 print(-1)
         else:
-            print(-1)            
+            print(-1)   
+                   

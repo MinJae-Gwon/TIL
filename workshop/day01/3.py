@@ -19,3 +19,11 @@ print('A형: ',blood_types.count('A'))
 print('B형: ',blood_types.count('B'))
 print('AB형: ',blood_types.count('AB'))
 print('O형: ',blood_types.count('o'))
+
+####
+result = {}
+for blood_type in blood_types:
+    if blood_type in result:
+        result[blood_type]+=1
+    else:
+        result[blood_type]=1
