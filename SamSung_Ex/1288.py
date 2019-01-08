@@ -7,8 +7,10 @@ t=2
 
 for i in range(T):
     n = int(input())
-    origin_n = n
     
+    origin_n = n
+
+
     while True:
         
         a = list(str(n))

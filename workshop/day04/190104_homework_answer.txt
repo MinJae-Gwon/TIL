@@ -1,0 +1,34 @@
+1.
+import keyword
+print(keyword.kwlist)
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+2.
+a= 0.1*3
+b= 0.3
+(1)
+abs(a-b)<=1e-10
+(2)
+import sys
+abs(a-b)<=sys.float_info.epsilon
+(3)
+import math
+math.isclose(a,b)
+
+3.
+(1)
+\n
+(2)
+\t
+
+4.
+(1)
+print("%s, Ã¶¼ö¾ß"%"¾È³ç")
+(2)
+print("{0}, Ã¶¼ö¾ß".format("¾È³ç"))
+(3)
+greeting = "¾È³ç"
+print(f"{greeting},Ã¶¼ö¾ß")
+
+5.
+int('3.5')
