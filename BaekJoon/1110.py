@@ -1,21 +1,16 @@
-n = int(input())
-
-def cycle(n):
-    t=0
-    new_n = 0
-    while n!=new_n:
-        cycle_1= n//10+n%10
-        cycle_2= n%10*10+cycle_1%10
-        new_n = cycle_2
-        t+=1
-    return t
-
-print(cycle(n))
-
-# if n<10:
-#     n = int(str(n)+'0')
-#     print(cycle(n))
-# else:
-#     print(cycle(n))
-
-
+def palin(n):
+    
+    if len(n)==1:
+        return True
+    elif len(n)%2==0:
+        for i in range(len(n)//2):
+            if n[i] != n[len(n)-1-i]:
+                return False
+        return True
+    else:
+        for j in range(len(n)//2):
+            if n[j] != n[len(n)-1-j]:
+                return False
+        return True
+                
+print(palin('naana'))
