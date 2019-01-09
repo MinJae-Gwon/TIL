@@ -20,11 +20,35 @@
 # print(res)
 
 
-f=82
-c=(f-32)*(5/9)
-print(f'{f:0.2f} ℉ => {c:0.2f} ℃')
+# f=82
+# c=(f-32)*(5/9)
+# print(f'{f:0.2f} ℉ => {c:0.2f} ℃')
 
+# dic = {
+#     '0':0,
+#     '1':0,
+#     '2':0,
+#     '3':0,
+#     '4':0,
+#     '5':0,
+#     '6':0,
+#     '7':0,
+#     '8':0,
+#     '9':0
+# }
 
+# n = '11'
+
+# for comp in n:
+#     if comp in dic:
+#         dic[comp]+=1
+# for key in dic.keys():
+#     dic[key]=str(dic[key])
+
+# print(' '.join(dic.keys()))
+# print(' '.join(dic.values()))    
+res = 20/300*100
+print(f'혼합된 소금물의 농도: {res:0.2f}%')
 
 
     
