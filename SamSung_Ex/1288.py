@@ -1,10 +1,5 @@
-T = int(input())
-l=[]
-for test_number in range(T):
-    n = int(input())
-    l.append(n)
 
-print(l)
+
 
 
 

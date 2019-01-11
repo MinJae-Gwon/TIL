@@ -11,6 +11,7 @@ while True:
     else:
         s.append(n%2)
         n = n//2
+
 s.reverse()    
 for i in s:
     print(i,end='')

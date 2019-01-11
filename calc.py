@@ -22,7 +22,6 @@ def calc(equation):
                 res+=int(num[i])
             else:
                 res-=int(num[i])
-       
     return res
 print(calc('123+2-124'))
 print(calc('-12+12-7979+9191'))

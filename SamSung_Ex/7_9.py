@@ -47,8 +47,12 @@
 
 # print(' '.join(dic.keys()))
 # print(' '.join(dic.values()))    
-res = 20/300*100
-print(f'혼합된 소금물의 농도: {res:0.2f}%')
+
+n=int(input())
+
+if n==1:
+    print(1)
+
 
 
     
