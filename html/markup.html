@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MarkUp</title>
+    
+    <style>
+        table, tr, td{
+            border: 1px solid darkgray;
+               }
+    </style>
+
+</head>
+<body>
+    <h1>프로그래밍 교육</h1>
+    <a href="#python"> <img src="images/chi.gif" alt="chicken" width="100" height="100"></a>
+    <a href="#web"> <img src="images/fat.webp" alt="fat" width="100" height="100"></a>
+    <a href="index.html">참고사이트</a>
+    <hr>
+    <section id="python">
+        <h2><a href="selfstydy.html" target="_blank">파이썬</a></h2> 
+        <h3>Number Type</h3>
+        <p>
+        파이썬에서 숫자형은 아래와 같이 있다.
+        </p>
+        <ol>
+            <li>int</li>
+            <li>float</li>
+            <li>complex</li>
+            <li><del>str</del></li>
+        </ol>
+        
+        <h3>Sequence</h3>
+        파이썬에서 시퀀스는 아래와 같이 있다.
+        <h3>시퀀스는 for문을 돌릴 수 있다!!</h3>
+        <ol>
+            <li>str</li>
+            <li>list</li>
+            <li>tuple</li>
+            <li>range</li>
+        </ol>
+
+    </section>
+    <hr>
+    <section id="web">
+            <a href="mdndocs.html" target="_self"><h2>웹</h2></a>
+        <h3>기초</h3>
+        <!-- style 종류: none=>커스텀으로 쓰는 추세, square, circle, lower-alpha
+            upper-alpha, upper-roman, ... -->
+        <ul style="list-style-type:circle">
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </section>
+    <hr>
+
+
+    <!-- a(anchor) -->
+    <!-- href values:
+        1. 절대 URL
+        2. 상대 URL
+        3. element id
+        4. mailto:
+    -->
+    <a href="https://www.google.com" target="_self">절대URL</a>
+    <br>
+    <a href="index.html" target="_blank">상대URL</a>
+    <!-- blank: 새탭에서 열기 -->
+    <a href="#python">파이썬으로(id python)</a>
+    <!-- #: id 호출 -->
+    <a href="mailto:minjae2271@naver.com">메일 보내기</a>
+    <hr>
+<section>
+    <!-- image -->
+    <img src="images/1.png" alt="야생의 팬텀" width="500px" height="500px"><br>
+    <!-- video -->
+    <video src="video.mp4" width="400" height="" controls></video><br>
+    <!-- iframe -->
+    <iframe iframe width="560" height="315" src="https://www.youtube.com/embed/LRmgEgWGHr0"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> frameborder="0"></iframe>
+</section>
+<section>
+    <!-- table -->
+    <!-- 한번에 만들기: table>tr*3>td*4 -->
+    <table>
+        <!-- table row -->
+        <tr>
+            <!-- table head -->
+            <th></th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+        </tr>
+        <tr>
+            <!-- table data -->
+            <td>A코스</td>
+            <!-- rowspan: 세로 칸 길이 -->
+            <td rowspan="2">짬뽕</td>
+            <!-- colspan: 가로 칸 길이 -->
+            <td colspan="2">초밥</td>
+            
+            
+        </tr>
+        <tr>
+            <td>B코스</td>
+            
+            <td>김치찌개</td>
+            <td>버섯덮밥</td>
+
+        </tr>
+    </table>
+    <br>
+    <h2>2019 타임테이블</h2>
+    <table>
+
+        <tr>
+            <th>TIME</th>
+            <th>INDOOR</th>
+            <th colspan="2">OUTDOOR</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>소극장</td>
+            <td>잔디마당</td>
+            <td>대공연장</td>
+        </tr>
+        <tr>
+            <td>10:00</td>
+            <td rowspan="2">안녕하신가영</td>
+            <td></td>
+            <td>10CM</td>
+        </tr>
+        <tr>
+            <td>13:00</td>
+            <td rowspan="2">선우정아</td>
+            <td rowspan="2">참깨와 솜사탕</td>
+        </tr>
+        <tr>
+            <td>15:00</td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td>15:00</td>
+            <td>크러쉬</td>
+            <td></td>
+            <td>폴킴</td>
+        </tr>
+
+    </table>
+
+</section>
+<br>
+<section>
+    <!-- form -->
+    <form action="" method="GET">
+        <input type="text" value="ID">
+        <br>
+        <input type="password" value="password">
+        <br>
+        <input type="number" min="15" max="30" step="5">
+        <br>
+        <!-- radio -->
+        <div>
+            <input type="radio" name="sanwich" checked>BLT<br>
+            <input type="radio" name="sanwich">Steak&Cheese<br>
+            <input type="radio" name="sanwich">Meatball<br>
+        </div>
+        
+        <div>
+            <input type="checkbox" name="topping">Tomato<br>
+            <input type="checkbox" name="topping">Cucumber<br>
+            <input type="checkbox" name="topping">Olive<br>
+        </div>
+
+        <div>
+            <!-- select -->
+            <select name="" id="">
+                <option>Coke</option>
+                <option selected>Dr.Pepper</option>
+                <option disabled>MoutainDew</option>
+            </select>
+        </div>
+        <input type="submit" value="LOGIN">
+    </form>
+
+</section>
+
+
+</body>
+</html>
