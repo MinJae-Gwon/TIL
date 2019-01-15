@@ -1,0 +1,17 @@
+div{
+    height: 400px;
+}
+
+.background-color{
+    background-color: blue;
+}
+
+.background-image{
+    background-image: url(images/1.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
+}
