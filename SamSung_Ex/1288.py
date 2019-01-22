@@ -1,5 +1,19 @@
-
-
+import copy
+T=int(input())
+for j in range(T):
+    N=int(input())
+    origin_N=copy.deepcopy(N)
+    num_list=[]
+    i=1
+    while True:
+        N=i*origin_N
+        split_N=list(str(N))
+        num_list.extend(split_N)
+        num_list=list(set(num_list))
+        i+=1
+        if len(num_list)==10:
+            break
+    print(f'#{j+1} {N}')
 
 
 
