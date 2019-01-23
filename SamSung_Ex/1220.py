@@ -47,6 +47,9 @@ for time in range(1):
     print(new_l)
     
 #충돌
+    fin_l=[]
     for ele4 in new_l:
         ele4=''.join(ele4)
-    print(new_l)
+        ele4=ele4.replace('0','')
+        fin_l.append(ele4)
+    print(fin_l)
