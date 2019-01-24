@@ -53,3 +53,20 @@ for time in range(1):
         ele4=ele4.replace('0','')
         fin_l.append(ele4)
     print(fin_l)
+
+#교착
+    deadlock=0
+    for ele5 in fin_l:
+        count_index=0
+        
+        while True:
+            if count_index > len(ele5)-2:
+                break
+            if ele5[count_index]!=ele5[count_index+1]:
+                count_index+=2
+                deadlock+=1
+            elif ele5[count_index]==ele5[count_index+1]:
+                count_index+=1
+            
+    print(f'#{time+1} {deadlock}')
+

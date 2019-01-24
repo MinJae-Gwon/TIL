@@ -11,3 +11,4 @@ for i in range(T):
     all_l=[str(k) for k in all_l]
     res=' '.join(all_l)
     print(f'#{i+1} {res}') 
+    
