@@ -76,7 +76,7 @@ INSTALLED_APPS = [
 
 
 
-pages 폴더 내부에 templates 폴더 추가
+pages(APP) 폴더 내부에 templates 폴더 추가
 
 
 
@@ -97,8 +97,9 @@ def index(request):
 ```python
 from django.contrib import admin
 from django.urls import path
-from pages import views
 ### 추가하기
+from pages import views
+
 urlpatterns = [
     path('index/', views.index),
     path('admin/', admin.site.urls),
@@ -309,3 +310,4 @@ name 내부 : query
 
 
 
+#### [Bootstrap]
