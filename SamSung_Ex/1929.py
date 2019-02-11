@@ -11,7 +11,7 @@ def numcheck(num):
         
 a,b=map(int,input().split())
 
-for k in range(a,b+1):
-    if numcheck(k):
-        print(k)
+for j in range(a,b+1):
+    if numcheck(j):
+        print(j)
 
