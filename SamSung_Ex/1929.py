@@ -10,7 +10,7 @@ def numcheck(num):
     return True
         
 a,b=map(int,input().split())
-
+print("a")
 for j in range(a,b+1):
     if numcheck(j):
         print(j)
