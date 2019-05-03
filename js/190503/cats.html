@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+</head>
+<body>
+    <div id="app">
+        <button v-on:click="getCatImage">애용</button>
+        <div>
+            <img v-bind:src="imageUrl" alt="cat image"> 
+        </div>
+    </div>
+
+    <script>
+        const app = new Vue({
+            el: '#app',
+            data: {
+                imageUrl: '',
+            },
+            methods: {
+                getCatImage: function(){
+                    axios.get('https://api.thecatapi.com/v1/images/search')
+                        .then((response)=>{ //this를 사용하기 위해 '=>' 사용 
+                            this.imageUrl = response.data[0].url
+                        })
+                }
+            }
+        })
+    </script>
+</body>
+</html>

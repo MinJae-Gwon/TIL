@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- CDN 방법으로 Vue.js 호출 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">{{message}}
+            <p v-if="checked">여긴 보임.</p>
+            
+            <li v-for="post in posts">
+            {{post}}
+            </li>
+
+            <li v-for="info in student">
+                {{ info }}
+            </li>
+
+            <li v-for="info in Object.keys(student)">
+                <span>Key: </span>{{info}} - <span>Value: </span>{{student[info]}}
+            </li>
+    </div> 
+    
+
+    
+    <script>
+        const app = new Vue({ 
+            el: '#app', // 어디에, div id와 연동
+            data: { //무엇을, 
+                message: 'hello, Vue!',
+                count: 0,
+                checked: true,
+                posts: ['첫게시', '두번째'],
+                student:{
+                    name: 'MJ',
+                    univ: 'KH',
+                }
+            },
+            methods: { //어떻게, data들을 조작
+                //this.message
+                plus: function(){ //Vue에서는 arrow function 사용 불가
+                    this.count++
+                }
+            }
+        })
+    </script>
+</body>
+</html>
